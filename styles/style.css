@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'fuente';
+    src: url('../recursos/fonts/Nexa.otf') format('truetype');
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    background: #FFF;
+    font-family: fuente;
+    color: #FFF;
+}
+
+A:link{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+}
+A:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+}
+A:visited{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.camp0, .camp0:focus,.camp0:hover{
+    margin-top: 3px;
+    width: 111px;
+    height: 22px;
+    margin-left: 16px;
+    background: #A4A4A4;
+    color: #FFF;
+    border: none;
+    outline:none;
+    font-size: 16px;
+}
+
+.camp1, .camp1:focus,.camp1:hover{
+    margin-top: 3px;
+    width: 111px;
+    height: 22px;
+    margin-left: 16px;
+    background: #A4A4A4;
+    color: #FFF;
+    border: none;
+    outline:none;
+    font-size: 16px;
+}
+
+#agregar{
+    width: 93px;
+    height: 20px;
+    border: none;
+    margin-left: 14px;
+    font-family: fuente;
+    font-size: 12px;
+    background: #04B4AE;
+    color: #FFF;
+}
+
+#contenedor{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    background: #FAFAFA;
+}
+
+#header{
+    width: 500px;
+    height: 30px;
+    background: #6E6E6E;
+}
+
+#titulo{
+    width: 160px;
+    height: 10px;
+    font-size: 16px;
+    padding-top: 5px;
+    margin: auto;
+}
+
+#contexto{
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+#campos{
+    width: 500px;
+    height: 25px;
+    margin-bottom: 8px;
+}
+
+.campo0,.campo0:focus,.campo0:hover{
+    width: 108px;
+    height: 24px;
+    background: #A4A4A4;
+    float: left;
+    margin-left: 16px;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 3px;
+    border: none;
+    color: #FFF;
+    outline:none;
+}
+
+.campo1,.campo1:focus,.campo1:hover{
+    width: 108px;
+    height: 24px;
+    background: #A4A4A4;
+    float: left;
+    margin-left: 19px;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 3px;
+    border: none;
+    color: #FFF;
+    outline:none;
+}
+
+.adicional, .adicional:focus,.adicional:hover{
+    width: 109px;
+    height: 24px;
+    border: none;
+    outline:none;
+    color: #FFF;
+    background: #A9F5F2;
+    float: left;
+    margin-left: 20px;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 3px;
+}
+
+.ver{
+    width: 46px;
+    height: 23px;
+    background: #04B4AE;
+    float: left;
+    margin-left: 23px;
+    padding: 6px 0 0 6px;
+}
+
+.valor{
+    width: 111px;
+    height: 25px;
+    background: #04B4AE;
+    margin-left: 20px;
+    float: left;
+}
+
+#Tfilas{
+    width: 50px;
+    height: 10px;
+    margin: auto;
+}
+
+#Tcolumnas{
+    width: 90px;
+    height: 10px;
+    margin: auto;
+}
+
+#Vadicional{
+    width: 105px;
+    height: 10px;
+    margin: auto;
+}
+
+.item{
+    width: 470px;
+    height: 30px;
+    margin: 5px;
+}
+
+
+#botton{
+    padding: 5px 5px;
+    width: 490px;
+    height: 27px;
+    background: #6E6E6E;
+}
+
+.emergente{
+    top: 0;
+    display: none;
+    background: rgba(0,0,0,.9);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 2;
+}
+
+.cuerpo{
+    width: 1000px;
+    height: 550px;
+    background: #A4A4A4;
+    margin: 50px auto;
+    overflow-y: auto;
+}
+
+.tablero{
+    width: 950px;
+    height: 550px;
+    margin: 0 auto;
+    background: #6E6E6E;;
+}
+
+.canvas{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%
+}
+
+canvas{
+    display: none;
+}

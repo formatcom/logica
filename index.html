@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bases de Datos</title>
+
+    <!-- Esto llama la hoja de estilo -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
+    <!-- libreria Jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    
+    <!-- Objetos JavaScript -->
+    <script type="text/javascript" src="funciones/js/tile.js"></script>
+    <script type="text/javascript" src="funciones/js/tablero.js"></script>
+    <script type="text/javascript" src="funciones/js/item.js"></script>
+    <script type="text/javascript" src="funciones/js/ver.js"></script>
+<script type="text/javascript" src="funciones/js/agregar.js"></script>
+    
+    <!-- Instaciar Objeto -->
+    <script>
+
+        var contexto = this;
+    window.onload=function(){
+        items = new item(0);
+        items.php();
+        $("#agregar").on('click', function() {
+            add();
+	});
+        
+    }
+    </script>
+    
+</head>
+<body>
+<div id="contenedor">
+    <div id="header"><div id="titulo">VINICIO VALBUENA</div></div>
+    <div id="campos">
+        <div class="valor"><div id="Tfilas">FILAS</div></div>
+        <div class="valor"><div id="Tcolumnas">COLUMNAS</div></div>
+        <div class="valor"><div id="Vadicional">V.ADICIONAL</div></div>
+    </div>
+    <div id="contexto">
+        <div id="lista">
+            
+        </div>
+    </div>
+    <div id="botton">
+        <input class="camp0" id="filas"/> 
+        <input class="camp1" id="columnas"/>
+        <button id="agregar">AGREGAR</button>
+    </div>
+</div>
+<div class="emergente">
+    <div class="cuerpo">
+        <div class="tablero">
+            <div class="canvas">
+                <div id="pFilas">Filas: 150</div>
+                <div id="pColumnas">Columnas: 20</div>
+                <img id="matriz"/>
+                <a href="javascript:void(0)"  target="_blank" id="imagen">Ver imagen completa</a><br/>
+                <a href='javascript:items.getVer().cerrar()'>Cerrar</a>
+                <canvas id="myCanvas">Tu navegador no soporta canvas.</canvas>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>		
