@@ -5,7 +5,7 @@ class jsonPhp{
 	private $mysqli, $lista = array();
 
 	public function __construct() {
-		$this->mysqli = new mysqli("mysql7.000webhost.com","a7992614_format","V03112007","a7992614_format");
+		$this->mysqli = new mysqli("localhost", "root", "", "matriz");
 
 		/* verificar la conexión */
 		if (mysqli_connect_errno()) {
@@ -39,7 +39,7 @@ class jsonPhp{
 		if ($result = $this->mysqli->query($query)) {
 		}else return 1;
 	}
-    
+
     public function img($indice){
 		$query = "SELECT img FROM lista WHERE id='$indice'";
 		if ($result = $this->mysqli->query($query)) {
